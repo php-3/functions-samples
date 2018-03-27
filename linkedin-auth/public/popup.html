@@ -44,6 +44,7 @@ Please wait...
    * Returns the ID of the Firebase project.
    */
   function getFirebaseProjectId() {
+    alert(firebase.app().options.authDomain.split('.')[0]);
     return firebase.app().options.authDomain.split('.')[0];
   }
 
